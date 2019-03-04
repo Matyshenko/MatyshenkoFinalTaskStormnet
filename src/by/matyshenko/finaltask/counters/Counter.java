@@ -14,7 +14,8 @@ import static by.matyshenko.finaltask.Parking.cars;
 public class Counter {
 
 
-    public int countWhiteColorCars(Color color) {
+    public int countWhiteColorCars(Color color) { // тут лучше на3вать метод countCarsByColour
+        // ибо мы можем вы3ывать метод не только для белого цвета
 
         int counter = 0;
         for (Car car : cars) {
@@ -25,7 +26,7 @@ public class Counter {
         return counter;
     }
 
-    public int countCarsWithAutomatic(Transmission transmission) {
+    public int countCarsWithAutomatic(Transmission transmission) { // аналогично тут с на3ванием
         int counter = 0;
         for (Car carTransmission : cars) {
             if (transmission == carTransmission.getTransmission()) {
