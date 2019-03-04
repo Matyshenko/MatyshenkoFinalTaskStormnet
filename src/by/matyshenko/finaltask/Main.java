@@ -22,10 +22,13 @@ public class Main {
     public static void main(String[] args) {
         CreatorParkingPlace creatorParkingPlace = new CreatorParkingPlace();
         creatorParkingPlace.createCarPlaces(); // создание автомобилей с определенными параметрами
-
+        /*
+            тут впринципе лучше было бы исполь3овать не статик переменную класса паркинг
+            а объект класса Parking с полем cars
+         */
 
         SortForModel sortForModel = new SortForModel();
-        sortForModel.sort(); // сортировка по модели
+        sortForModel.sort(); // метод для сортировки тоже лучше было бы поместить в класс Parking
 
         DeleteCars deleteCars = new DeleteCars();
         deleteCars.deleteInvalidCars(); // удаление автомобилей по условиям

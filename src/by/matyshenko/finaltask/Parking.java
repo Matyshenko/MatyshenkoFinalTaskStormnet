@@ -5,7 +5,10 @@ import java.util.*;
 
 public class Parking {
     private String name;
-    public static List<Car> cars = new ArrayList<>(10);
+    public static List<Car> cars = new ArrayList<>(10); // 10 - капасити по умолчанию
+    // имеет смысл 3адавать тот параметр когда он отличен от 10
+    // и тут лучше не делать static ето поле
+    // иначе куча ра3ных парковок будет работать с одним и тем же списком машин
 
     public Parking(String name) {
         this.name = name;
